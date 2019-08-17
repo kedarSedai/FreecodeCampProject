@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          
+          <div class="well">
+            <p class="text-center" id="description" class="text-center">
+              Let's feel form
+            </p>
+            <form id="survey-form" action="#" method="get">
+              <div class="form-group">
+                <label for="name" id="name-label">*Name:</label>
+                <input class="form-control" class="name" type="text" id="name" name="username" required placeholder="Enter your name">
+              </div>
+              
+              <div class="form-group">
+                <label for="email" id="email-label">*E-mail:</label>
+                <input class="form-control"  type="email" id="email" name="email" required placeholder="Enter your E-mail">
+              </div>
+              
+              <div class="form-group">
+                <label for="age" id="number-label">*Age:</label>
+              <input class="form-control" type="number"  min="1" max="140" name="age" required id="number" placeholder="Age" required ></div>
+              
+              <div class="form-group">
+                <label>Select Category:
+                  <select id="dropdown">
+                    <option disabled>Select an Option</option>
+                    <option>Cricket</option>
+                    <option>Football</option>
+                    <option>BasketBall</option>
+                  </select>
+                </label>
+              </div>
+              
+              <label>Select Role:
+                <input type="radio" name="teacher" value="1">Teacher
+                <input type="radio" name="teacher" value="2">Student
+                <input type="radio" name="teacher" value="2">Admin
+              </label>
+              <label>Select CheckBox:
+                <input type="checkbox" name="student" value="Kathmandu">Student
+                <input type="checkbox" name="student" value="Biratnagar">Teacher</label>
+                
+                <label for="Comments">Any Comments?</label>
+                <textarea id="comments style="height:50px; resize:vertical;""> </textarea>
+          
+                <input  type="submit" class="btn btn-primary" type="submit" id="submit"></div>
+                
+              </div>
+            </div>
+          </div>
+        </form>
+      </body>
+    </html>
