@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculator</title>
+		<style type="text/css">
+		.calc
+		{
+		border-style: dotted;
+		height: 400px;
+		width: 400px;
+		text-align: center;
+		background: #FFA07A;
+		}
+		input
+		{
+			width: 40px;
+		}
+		#ans
+		{
+			width: 200px;
+		}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="calc">
+			<h1>Simple Calculator</h1>
+			<form name="calcForm" style="margin-top: 10px;">
+				<input type="text" placeholder="Here is your Answer" name="displayAns" id="ans">
+				<br><br>
+				<input type="button" value="1" onclick="calcForm.displayAns.value += '1' ">
+				<input type="button" value="2" onclick="calcForm.displayAns.value += '2' ">
+				<input type="button" value="3" onclick="calcForm.displayAns.value += '3' ">
+				<br><br>
+				<input type="button" value="4" onclick="calcForm.displayAns.value += '4' ">
+				<input type="button" value="5" onclick="calcForm.displayAns.value += '5' ">
+				<input type="button" value="6" onclick="calcForm.displayAns.value += '6' ">
+				<br><br>
+				<input type="button" value="7" onclick="calcForm.displayAns.value += '7' ">
+				<input type="button" value="8" onclick="calcForm.displayAns.value += '8' ">
+				<input type="button" value="9" onclick="calcForm.displayAns.value += '9' ">
+				<br><br>
+				<input type="button" value="0" onclick="calcForm.displayAns.value += '0' ">
+				<input type="button" value="+" onclick="calcForm.displayAns.value += '+' ">
+				<input type="button" value="-" onclick="calcForm.displayAns.value += '-' ">
+				<br><br>
+				<input type="button" value="AC" onclick="calcForm.displayAns.value = '' ">
+				
+				<input type="button" value="*" onclick="calcForm.displayAns.value += '*' ">
+				<input type="button" value="/" onclick="calcForm.displayAns.value += '/' ">
+				<br><br>
+				<input type="button" value="=" onclick="calcForm.displayAns.value = eval(calcForm.displayAns.value) ">
+				<input type="button" value="." onclick="calcForm.displayAns.value += '.' ">
+			</form>
+		</div>
+	</body>
+</html>
